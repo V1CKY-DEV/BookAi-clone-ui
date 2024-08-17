@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap');
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #a5b4fc;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --accent-color: #22d3ee;
+    --code-background: #1e293b;
+    --section-background: #1e293b;
+    --border-color: #334155;
+}
+body {
+    font-family: 'Inter', sans-serif !important;
+    color: var(--text-color) !important;
+    background-color: var(--background-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.6 !important;
+    
+}
+.container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.heading{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 0 !important;
+    
+    
+}
+h1{
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem;
+    color: var(--text-color) !important;
+    font-weight: 800 !important;
+    /* Don't know why this design has no balance to match 
+    the original i added margins and the header is not center aligned
+     so i aligned it  */
+    margin-bottom: 24px !important;
+    margin-top: 8px !important;
+    
+}
+.navbar{
+    background-color: var(--section-background);
+
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    margin: 1rem;
+    margin-right:2.6rem ;
+}
+.navbar ul li{
+    display: inline;
+    margin-left: 1.2rem;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.navbar ul a:hover{
+    color: var(--accent-color);
+}
+h2, h3, h4 {
+    margin-top: 2rem !important;
+    color: var(--secondary-color) !important;
+}
+h2 {
+    display: block;
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+}
+.row{
+    
+    display: flex;
+    justify-content: center;
+    
+    width: fit-content !important;
+}
+
+.row>div{
+    background-color: var(--section-background);
+    border: var(--border-color) 1px solid;
+    border-radius: 8px;
+    margin-top: 2rem !important;
+}
+.row div .content{
+    padding: 1.5rem !important;
+}
+pre,.apikey{
+    font-family: 'Fira Code', monospace;
+    border: var(--border-color) 1px solid;
+    padding: 1rem !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    white-space: pre-wrap;
+}
+.btn {
+    background-color: var(--accent-color) !important;
+    color: var(--background-color) !important;
+    border: none !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+
+}
+.btn:hover{
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+}
+.apikey{
+    margin-top: 1.5rem;
+}
+h3 {
+    font-size: 1.17em !important;
+    font-weight: bold !important;
+}
+.badges{
+    display: inline-flex !important;
+    
+}
+.badges p{
+    margin: 1rem;
+    margin-left: 0;
+    padding: .3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+    border-radius: 8px;
+    font-size: 1rem !important;
+    
+}
+.badge-1{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: bold;
+}
+.badge-2{
+    background-color: var(--primary-color);
+    
+}
+h4 {
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+}
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+td, th {
+    text-align: left;
+    padding: 1rem !important;
+    font-size: 0.85rem;
+    }
+thead{
+    background-color: var(--primary-color);
+    margin: auto;
+}
+tbody tr td:first-child{
+    color: var(--accent-color);
+}
+@media screen and (max-width: 780px) {
+    .navbar ul{
+        list-style-type: none;
+        display:list-item;
+        
+        margin-right:2.6rem ;
+        text-align: center;
+    }
+    .navbar ul li{
+        display: block;
+        
+        margin: 1rem;
+    }
+    .navbar ul a{
+        text-decoration: none;
+        color:var(--text-color);
+        font-size: 0.9rem !important;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+  }
